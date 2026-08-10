@@ -14,30 +14,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Requirements (copied from email):
-
-Login & MFA
-• Login screen with email and password.
-• Validate email and password fields with clear error messages.
-• Add a second authentication step using a mock MFA method such as OTP, email code, or authenticator
-code.
-• Include a simple Sign Up flow that navigates to a separate screen. Full registration is not required.
-• Flow: Login → MFA → Protected Screen
-• Flow 2: Login → Sign Up
-
-Access Control
-• After successful login and MFA, redirect to a protected screen.
-• Demonstrate two user roles:
-o Read-only: Edit actions are hidden or disabled.
-o Read/write: Edit actions are visible and enabled.
-• Mock users/roles are acceptable; no backend authentication is required.
-
-Technical
-• Use React
-• Keep the code modular and maintainable.
-• Include tests where appropriate.
-• UI/component libraries are allowed.
-
 ## Things to include in final repo:
 
 Technologies used
