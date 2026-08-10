@@ -1,0 +1,35 @@
+html {
+    --accent-color: rgb(124, 86, 239);
+}
+
+div#page {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, var(--accent-color), white);
+}
+
+#login-box {
+    border: 0px;
+    width: 20rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#email, #password, #login {
+    border: 1px solid black;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 2rem;
+}
+
+#login {
+    border: 0px;
+    color: white;
+    background-color: var(--accent-color);
+}
