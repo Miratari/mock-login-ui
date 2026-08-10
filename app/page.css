@@ -11,19 +11,20 @@ div#page {
 }
 
 #login-box {
-    border: 2px solid black;
+    border: 0px;
     width: 20rem;
-    display: grid;
     text-align: center;
     background-color: white;
     border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 #login-box #email, #login-box #password, #login-box #login {
     border: 1px solid black;
     padding: 0.5rem;
     padding-left: 1rem;
-    margin: 0.5rem;
     border-radius: 2rem;
 }
 
