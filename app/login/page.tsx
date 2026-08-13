@@ -1,6 +1,6 @@
 import './page.css';
 
-export default function Home() {
+export default function Login() {
   return (
     <div id="page">
       <form id="login-box">

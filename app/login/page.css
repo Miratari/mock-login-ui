@@ -3,12 +3,12 @@ html {
     --primary-color: rgb(59, 59, 59);
     --background-color: rgb(44, 44, 44);
     --element-color: rgb(255, 255, 255);
-    --protrusion: 0px -0.1rem 0.4rem rgba(0, 0, 0, 0.3) inset, 0px 0.1rem 0.4rem rgba(255, 255, 255, 0.3) inset;
-    --indent: 0px 0.1rem 0.2rem rgba(0, 0, 0, 0.3) inset, 0px -0.1rem 0.2rem rgba(255, 255, 255, 0.3) inset;
+    --outdent: 0px -0.2rem 0.4rem rgba(0, 0, 0, 0.5) inset, 0px 0.2rem 0.2rem rgba(255, 255, 255, 0.3) inset;
+    --indent: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.3) inset, 0px -0.2rem 0.2rem rgba(255, 255, 255, 0.2) inset;
 }
 
 div#page {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Helvetica, Arial, sans-serif;
     display: grid;
     place-items: center;
     align-items: center;
@@ -25,15 +25,14 @@ div#page {
     display: grid;
     gap: 1rem;
     padding: 1rem;
-    box-shadow: var(--protrusion);
+    box-shadow: var(--outdent);
     color: var(--element-color);
 }
 
 h1 {
-    font-weight: 100;
+    font-weight: 700;
     font-size: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
+    padding: 1rem;
 }
 
 #email, #password, #login, #create {
@@ -51,7 +50,11 @@ h1 {
     border: 0px;
     color: var(--element-color);
     background-color: var(--accent-color);
+    box-shadow: var(--outdent);
 }
 #login, #create {
     cursor: pointer;
+}
+#login:active {
+    box-shadow: var(--indent);
 }
