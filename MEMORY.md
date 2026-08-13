@@ -1,0 +1,1 @@
+- [CLAUDE.md](CLAUDE.md) — Comprehensive project guidelines for Claude Code

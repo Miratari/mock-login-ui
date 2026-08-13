@@ -1,35 +1,57 @@
 html {
-    --accent-color: rgb(124, 86, 239);
+    --accent-color: rgb(123, 99, 192);
+    --primary-color: rgb(59, 59, 59);
+    --background-color: rgb(44, 44, 44);
+    --element-color: rgb(255, 255, 255);
+    --protrusion: 0px -0.1rem 0.4rem rgba(0, 0, 0, 0.3) inset, 0px 0.1rem 0.4rem rgba(255, 255, 255, 0.3) inset;
+    --indent: 0px 0.1rem 0.2rem rgba(0, 0, 0, 0.3) inset, 0px -0.1rem 0.2rem rgba(255, 255, 255, 0.3) inset;
 }
 
 div#page {
+    font-family:Arial, Helvetica, sans-serif;
     display: grid;
     place-items: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(45deg, var(--accent-color), white);
+    background-color: var(--background-color);
 }
 
 #login-box {
     border: 0px;
     width: 20rem;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
     border-radius: 1rem;
     display: grid;
     gap: 1rem;
     padding: 1rem;
+    box-shadow: var(--protrusion);
+    color: var(--element-color);
 }
 
-#email, #password, #login {
-    border: 1px solid black;
+h1 {
+    font-weight: 100;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+#email, #password, #login, #create {
     padding: 0.5rem;
     padding-left: 1rem;
     border-radius: 2rem;
 }
 
+#email, #password {
+    box-shadow: var(--indent);
+    outline: 0;
+}
+
 #login {
     border: 0px;
-    color: white;
+    color: var(--element-color);
     background-color: var(--accent-color);
+}
+#login, #create {
+    cursor: pointer;
 }
