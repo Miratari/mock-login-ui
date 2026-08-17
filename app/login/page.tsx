@@ -41,6 +41,7 @@ export default function Login() {
     <div id="page">
       <form id="login-box" onSubmit={handleLogin}>
         <h1>Welcome!</h1>
+        <h2>Sign in with your email and password</h2>
         <input
           type="text"
           id="email"

@@ -1,5 +1,5 @@
 html {
-    --accent-color: rgb(106, 89, 157);
+    --accent-color: rgb(238, 105, 52);
     --primary-color: rgb(59, 59, 59);
     --background-color: rgb(44, 44, 44);
     --element-color: rgb(255, 255, 255);
@@ -35,6 +35,11 @@ h1 {
     font-weight: 700;
     font-size: 2rem;
     padding: 1rem;
+    padding-bottom: 0px;
+}
+
+h2 {
+    padding-bottom: 1rem;
 }
 
 #email, #password, #login, #create {

@@ -1,0 +1,72 @@
+html {
+    --accent-color: rgb(211, 87, 38);
+    --primary-color: rgb(59, 59, 59);
+    --background-color: rgb(44, 44, 44);
+    --element-color: rgb(255, 255, 255);
+    --error-color: rgb(253, 89, 89);
+    --outdent: 0px -0.2rem 0.4rem rgba(0, 0, 0, 0.5) inset, 0px 0.2rem 0.2rem rgba(255, 255, 255, 0.3) inset;
+    --indent: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.3) inset, 0px -0.2rem 0.2rem rgba(255, 255, 255, 0.2) inset;
+}
+
+div#page {
+    font-family:Helvetica, Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+#login-box {
+    border: 0px;
+    width: 20rem;
+    max-width: 100vw;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: var(--outdent);
+    color: var(--element-color);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-bottom: 0px;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+#auth, #submit {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 2rem;
+}
+
+#auth {
+    box-shadow: var(--indent);
+    outline: 0;
+}
+
+#error {
+    color: var(--error-color);
+}
+
+#submit {
+    border: 0px;
+    color: var(--element-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--outdent);
+    transition-duration: 50ms;
+}
+#submit {
+    cursor: pointer;
+}
+#submit:active {
+    box-shadow: var(--indent);
+}
